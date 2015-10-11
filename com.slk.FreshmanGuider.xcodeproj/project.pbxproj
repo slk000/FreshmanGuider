@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		DBF7D1661BA9AE200011FF73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1651BA9AE200011FF73 /* main.m */; };
 		DBF7D1691BA9AE200011FF73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1681BA9AE200011FF73 /* AppDelegate.m */; };
-		DBF7D16C1BA9AE200011FF73 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D16B1BA9AE200011FF73 /* FirstViewController.m */; };
-		DBF7D16F1BA9AE200011FF73 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D16E1BA9AE200011FF73 /* SecondViewController.m */; };
 		DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1701BA9AE200011FF73 /* Main.storyboard */; };
 		DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1731BA9AE200011FF73 /* Assets.xcassets */; };
 		DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1751BA9AE200011FF73 /* LaunchScreen.storyboard */; };
-		DBF7D1821BA9AE200011FF73 /* com_slk_FreshmanGuiderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1811BA9AE200011FF73 /* com_slk_FreshmanGuiderTests.m */; };
-		DBF7D18D1BA9AE200011FF73 /* com_slk_FreshmanGuiderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D18C1BA9AE200011FF73 /* com_slk_FreshmanGuiderUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +36,12 @@
 		DBF7D1651BA9AE200011FF73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBF7D1671BA9AE200011FF73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBF7D1681BA9AE200011FF73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBF7D16A1BA9AE200011FF73 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DBF7D16B1BA9AE200011FF73 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DBF7D16D1BA9AE200011FF73 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DBF7D16E1BA9AE200011FF73 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DBF7D1711BA9AE200011FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF7D1731BA9AE200011FF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF7D1761BA9AE200011FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF7D1781BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF7D17D1BA9AE200011FF73 /* com.slk.FreshmanGuiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF7D1811BA9AE200011FF73 /* com_slk_FreshmanGuiderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_slk_FreshmanGuiderTests.m; sourceTree = "<group>"; };
-		DBF7D1831BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF7D1881BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF7D18C1BA9AE200011FF73 /* com_slk_FreshmanGuiderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_slk_FreshmanGuiderUITests.m; sourceTree = "<group>"; };
-		DBF7D18E1BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */,
-				DBF7D1801BA9AE200011FF73 /* com.slk.FreshmanGuiderTests */,
-				DBF7D18B1BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests */,
 				DBF7D1621BA9AE200011FF73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,10 +92,6 @@
 			children = (
 				DBF7D1671BA9AE200011FF73 /* AppDelegate.h */,
 				DBF7D1681BA9AE200011FF73 /* AppDelegate.m */,
-				DBF7D16A1BA9AE200011FF73 /* FirstViewController.h */,
-				DBF7D16B1BA9AE200011FF73 /* FirstViewController.m */,
-				DBF7D16D1BA9AE200011FF73 /* SecondViewController.h */,
-				DBF7D16E1BA9AE200011FF73 /* SecondViewController.m */,
 				DBF7D1701BA9AE200011FF73 /* Main.storyboard */,
 				DBF7D1731BA9AE200011FF73 /* Assets.xcassets */,
 				DBF7D1751BA9AE200011FF73 /* LaunchScreen.storyboard */,
@@ -125,24 +107,6 @@
 				DBF7D1651BA9AE200011FF73 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DBF7D1801BA9AE200011FF73 /* com.slk.FreshmanGuiderTests */ = {
-			isa = PBXGroup;
-			children = (
-				DBF7D1811BA9AE200011FF73 /* com_slk_FreshmanGuiderTests.m */,
-				DBF7D1831BA9AE200011FF73 /* Info.plist */,
-			);
-			path = com.slk.FreshmanGuiderTests;
-			sourceTree = "<group>";
-		};
-		DBF7D18B1BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DBF7D18C1BA9AE200011FF73 /* com_slk_FreshmanGuiderUITests.m */,
-				DBF7D18E1BA9AE200011FF73 /* Info.plist */,
-			);
-			path = com.slk.FreshmanGuiderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF7D16F1BA9AE200011FF73 /* SecondViewController.m in Sources */,
 				DBF7D1691BA9AE200011FF73 /* AppDelegate.m in Sources */,
-				DBF7D16C1BA9AE200011FF73 /* FirstViewController.m in Sources */,
 				DBF7D1661BA9AE200011FF73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF7D1821BA9AE200011FF73 /* com_slk_FreshmanGuiderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF7D18D1BA9AE200011FF73 /* com_slk_FreshmanGuiderUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +464,7 @@
 				DBF7D1931BA9AE200011FF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF7D1941BA9AE200011FF73 /* Build configuration list for PBXNativeTarget "com.slk.FreshmanGuiderTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +473,7 @@
 				DBF7D1961BA9AE200011FF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF7D1971BA9AE200011FF73 /* Build configuration list for PBXNativeTarget "com.slk.FreshmanGuiderUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +482,7 @@
 				DBF7D1991BA9AE200011FF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
