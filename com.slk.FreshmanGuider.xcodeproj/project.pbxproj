@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0B88BB1BCBB3E900ED685A /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		DB74351B1BCA55DC0066C475 /* DateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74351A1BCA55DC0066C475 /* DateAndTimeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DB7435221BCA59220066C475 /* ListEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7435211BCA59220066C475 /* ListEditViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DB7435251BCA5D5A0066C475 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7435241BCA5D5A0066C475 /* ListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DB7435291BCAA4960066C475 /* newsRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7435281BCAA4960066C475 /* newsRecord.m */; settings = {ASSET_TAGS = (); }; };
+		DBF598FE1BE8D21400FE5EFC /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF598FD1BE8D21400FE5EFC /* NewsCell.m */; settings = {ASSET_TAGS = (); }; };
 		DBF7D1661BA9AE200011FF73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1651BA9AE200011FF73 /* main.m */; };
 		DBF7D1691BA9AE200011FF73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1681BA9AE200011FF73 /* AppDelegate.m */; };
 		DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1701BA9AE200011FF73 /* Main.storyboard */; };
 		DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1731BA9AE200011FF73 /* Assets.xcassets */; };
 		DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1751BA9AE200011FF73 /* LaunchScreen.storyboard */; };
+		DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0B88BA1BCBB3E900ED685A /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Model/DataManager.h; sourceTree = "<group>"; };
+		DB0B88BB1BCBB3E900ED685A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
+		DB7435191BCA55DC0066C475 /* DateAndTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateAndTimeViewController.h; path = Controllers/DateAndTimeViewController.h; sourceTree = "<group>"; };
+		DB74351A1BCA55DC0066C475 /* DateAndTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateAndTimeViewController.m; path = Controllers/DateAndTimeViewController.m; sourceTree = "<group>"; };
+		DB7435201BCA59220066C475 /* ListEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListEditViewController.h; path = Controllers/ListEditViewController.h; sourceTree = "<group>"; };
+		DB7435211BCA59220066C475 /* ListEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListEditViewController.m; path = Controllers/ListEditViewController.m; sourceTree = "<group>"; };
+		DB7435231BCA5D5A0066C475 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = Controllers/ListViewController.h; sourceTree = "<group>"; };
+		DB7435241BCA5D5A0066C475 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = Controllers/ListViewController.m; sourceTree = "<group>"; };
+		DB7435271BCAA4960066C475 /* newsRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = newsRecord.h; path = Model/newsRecord.h; sourceTree = "<group>"; };
+		DB7435281BCAA4960066C475 /* newsRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = newsRecord.m; path = Model/newsRecord.m; sourceTree = "<group>"; };
+		DBF598FC1BE8D21400FE5EFC /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		DBF598FD1BE8D21400FE5EFC /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		DBF7D1611BA9AE200011FF73 /* com.slk.FreshmanGuider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.slk.FreshmanGuider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7D1651BA9AE200011FF73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBF7D1671BA9AE200011FF73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +61,8 @@
 		DBF7D1781BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF7D17D1BA9AE200011FF73 /* com.slk.FreshmanGuiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7D1881BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFE9E7B1BCAAA1A0014A677 /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = Model/RssReader.h; sourceTree = "<group>"; };
+		DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = Model/RssReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +90,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB74351C1BCA58D00066C475 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB7435191BCA55DC0066C475 /* DateAndTimeViewController.h */,
+				DB74351A1BCA55DC0066C475 /* DateAndTimeViewController.m */,
+				DB7435201BCA59220066C475 /* ListEditViewController.h */,
+				DB7435211BCA59220066C475 /* ListEditViewController.m */,
+				DB7435231BCA5D5A0066C475 /* ListViewController.h */,
+				DB7435241BCA5D5A0066C475 /* ListViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB7435261BCAA42A0066C475 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBF598FC1BE8D21400FE5EFC /* NewsCell.h */,
+				DBF598FD1BE8D21400FE5EFC /* NewsCell.m */,
+				DB7435271BCAA4960066C475 /* newsRecord.h */,
+				DB7435281BCAA4960066C475 /* newsRecord.m */,
+				DBFE9E7B1BCAAA1A0014A677 /* RssReader.h */,
+				DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */,
+				DB0B88BA1BCBB3E900ED685A /* DataManager.h */,
+				DB0B88BB1BCBB3E900ED685A /* DataManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		DBF7D1581BA9AE200011FF73 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +139,8 @@
 		DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */ = {
 			isa = PBXGroup;
 			children = (
+				DB7435261BCAA42A0066C475 /* Model */,
+				DB74351C1BCA58D00066C475 /* ViewControllers */,
 				DBF7D1671BA9AE200011FF73 /* AppDelegate.h */,
 				DBF7D1681BA9AE200011FF73 /* AppDelegate.m */,
 				DBF7D1701BA9AE200011FF73 /* Main.storyboard */,
@@ -239,8 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF598FE1BE8D21400FE5EFC /* NewsCell.m in Sources */,
+				DB7435251BCA5D5A0066C475 /* ListViewController.m in Sources */,
+				DB74351B1BCA55DC0066C475 /* DateAndTimeViewController.m in Sources */,
+				DB7435221BCA59220066C475 /* ListEditViewController.m in Sources */,
 				DBF7D1691BA9AE200011FF73 /* AppDelegate.m in Sources */,
 				DBF7D1661BA9AE200011FF73 /* main.m in Sources */,
+				DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */,
+				DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */,
+				DB7435291BCAA4960066C475 /* newsRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = com.slk.FreshmanGuider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "slk.com-slk-FreshmanGuider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = com.slk.FreshmanGuider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "slk.com-slk-FreshmanGuider";
 				PRODUCT_NAME = "$(TARGET_NAME)";

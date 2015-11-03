@@ -1,8 +1,8 @@
 //
 //  main.m
-//  com.slk.FreshmanGuider
+//  FreshmanGuider
 //
-//  Created by Takanashirin on 15/9/16.
+//  Created by Takanashirin on 15/10/11.
 //  Copyright © 2015年 孙凌昆. All rights reserved.
 //
 
