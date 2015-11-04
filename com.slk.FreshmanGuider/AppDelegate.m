@@ -7,11 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "ListViewController.h"
+//#import "ListViewController.h"
 #import "RssReader.h"
 #import <CFNetwork/CFNetwork.h>
 #import "DataManager.h"
 #import "newsRecord.h"
+#import "TableViewCell2.h"
 
 @class ListViewController;
 
@@ -135,16 +136,8 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
                                             }
                                             printf("db add in delegate: %p", [DataManager sharedDataManager]);
                                             
-//                                            NSLog(@"shared:%@",[[DataManager sharedDataManager]getNews]);
-
-//                                            [[[DataManager sharedDataManager]getNews]addObject:@"2323"];
-//                                            NSLog(@"nothing start");
-//                                            for (newsRecord *rec in [((DataManager *)[DataManager sharedDataManager]) getNews]) {
-//                                                NSLog(@"%@", rec);
-//                                            }
-//                                            NSLog(@"end");
-//                                        
-//                                            [self.newsRecords addObjectsFromArray:newsList];
+//
+                                            
                                         });
 
                                                                             

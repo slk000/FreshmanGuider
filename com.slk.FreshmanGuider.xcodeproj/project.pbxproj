@@ -18,6 +18,16 @@
 		DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1701BA9AE200011FF73 /* Main.storyboard */; };
 		DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1731BA9AE200011FF73 /* Assets.xcassets */; };
 		DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1751BA9AE200011FF73 /* LaunchScreen.storyboard */; };
+		DBF852801BEA46C4000B2958 /* FDSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8527D1BEA46C4000B2958 /* FDSlideBar.m */; settings = {ASSET_TAGS = (); }; };
+		DBF852811BEA46C4000B2958 /* FDSlideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8527F1BEA46C4000B2958 /* FDSlideBarItem.m */; settings = {ASSET_TAGS = (); }; };
+		DBF8528E1BEA47EC000B2958 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF852841BEA47EC000B2958 /* Cell.m */; settings = {ASSET_TAGS = (); }; };
+		DBF8528F1BEA47EC000B2958 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF852851BEA47EC000B2958 /* Cell.xib */; settings = {ASSET_TAGS = (); }; };
+		DBF852901BEA47EC000B2958 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF852871BEA47EC000B2958 /* TableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		DBF852911BEA47EC000B2958 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF852881BEA47EC000B2958 /* TableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DBF852921BEA47EC000B2958 /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8528A1BEA47EC000B2958 /* TableViewCell2.m */; settings = {ASSET_TAGS = (); }; };
+		DBF852931BEA47EC000B2958 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF8528B1BEA47EC000B2958 /* TableViewCell2.xib */; settings = {ASSET_TAGS = (); }; };
+		DBF852941BEA47EC000B2958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8528D1BEA47EC000B2958 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DBF852971BEA55B6000B2958 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF852961BEA55B6000B2958 /* TestVC.m */; settings = {ASSET_TAGS = (); }; };
 		DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -61,6 +71,23 @@
 		DBF7D1781BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF7D17D1BA9AE200011FF73 /* com.slk.FreshmanGuiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7D1881BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF8527C1BEA46C4000B2958 /* FDSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBar.h; sourceTree = "<group>"; };
+		DBF8527D1BEA46C4000B2958 /* FDSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBar.m; sourceTree = "<group>"; };
+		DBF8527E1BEA46C4000B2958 /* FDSlideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBarItem.h; sourceTree = "<group>"; };
+		DBF8527F1BEA46C4000B2958 /* FDSlideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBarItem.m; sourceTree = "<group>"; };
+		DBF852831BEA47EC000B2958 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		DBF852841BEA47EC000B2958 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		DBF852851BEA47EC000B2958 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		DBF852861BEA47EC000B2958 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		DBF852871BEA47EC000B2958 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		DBF852881BEA47EC000B2958 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DBF852891BEA47EC000B2958 /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
+		DBF8528A1BEA47EC000B2958 /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
+		DBF8528B1BEA47EC000B2958 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
+		DBF8528C1BEA47EC000B2958 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBF8528D1BEA47EC000B2958 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBF852951BEA55B6000B2958 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		DBF852961BEA55B6000B2958 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		DBFE9E7B1BCAAA1A0014A677 /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = Model/RssReader.h; sourceTree = "<group>"; };
 		DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = Model/RssReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +148,7 @@
 		DBF7D1581BA9AE200011FF73 = {
 			isa = PBXGroup;
 			children = (
+				DBF8527B1BEA46C4000B2958 /* FDSlideBar */,
 				DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */,
 				DBF7D1621BA9AE200011FF73 /* Products */,
 			);
@@ -139,6 +167,7 @@
 		DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */ = {
 			isa = PBXGroup;
 			children = (
+				DBF852821BEA47EC000B2958 /* SlidePages */,
 				DB7435261BCAA42A0066C475 /* Model */,
 				DB74351C1BCA58D00066C475 /* ViewControllers */,
 				DBF7D1671BA9AE200011FF73 /* AppDelegate.h */,
@@ -158,6 +187,37 @@
 				DBF7D1651BA9AE200011FF73 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBF8527B1BEA46C4000B2958 /* FDSlideBar */ = {
+			isa = PBXGroup;
+			children = (
+				DBF8527C1BEA46C4000B2958 /* FDSlideBar.h */,
+				DBF8527D1BEA46C4000B2958 /* FDSlideBar.m */,
+				DBF8527E1BEA46C4000B2958 /* FDSlideBarItem.h */,
+				DBF8527F1BEA46C4000B2958 /* FDSlideBarItem.m */,
+			);
+			path = FDSlideBar;
+			sourceTree = "<group>";
+		};
+		DBF852821BEA47EC000B2958 /* SlidePages */ = {
+			isa = PBXGroup;
+			children = (
+				DBF852831BEA47EC000B2958 /* Cell.h */,
+				DBF852841BEA47EC000B2958 /* Cell.m */,
+				DBF852851BEA47EC000B2958 /* Cell.xib */,
+				DBF852861BEA47EC000B2958 /* TableViewCell.h */,
+				DBF852871BEA47EC000B2958 /* TableViewCell.m */,
+				DBF852881BEA47EC000B2958 /* TableViewCell.xib */,
+				DBF852891BEA47EC000B2958 /* TableViewCell2.h */,
+				DBF8528A1BEA47EC000B2958 /* TableViewCell2.m */,
+				DBF8528B1BEA47EC000B2958 /* TableViewCell2.xib */,
+				DBF8528C1BEA47EC000B2958 /* ViewController.h */,
+				DBF8528D1BEA47EC000B2958 /* ViewController.m */,
+				DBF852951BEA55B6000B2958 /* TestVC.h */,
+				DBF852961BEA55B6000B2958 /* TestVC.m */,
+			);
+			path = SlidePages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */,
+				DBF852911BEA47EC000B2958 /* TableViewCell.xib in Resources */,
+				DBF8528F1BEA47EC000B2958 /* Cell.xib in Resources */,
 				DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */,
+				DBF852931BEA47EC000B2958 /* TableViewCell2.xib in Resources */,
 				DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,8 +358,15 @@
 				DB74351B1BCA55DC0066C475 /* DateAndTimeViewController.m in Sources */,
 				DB7435221BCA59220066C475 /* ListEditViewController.m in Sources */,
 				DBF7D1691BA9AE200011FF73 /* AppDelegate.m in Sources */,
+				DBF8528E1BEA47EC000B2958 /* Cell.m in Sources */,
+				DBF852901BEA47EC000B2958 /* TableViewCell.m in Sources */,
 				DBF7D1661BA9AE200011FF73 /* main.m in Sources */,
+				DBF852921BEA47EC000B2958 /* TableViewCell2.m in Sources */,
+				DBF852941BEA47EC000B2958 /* ViewController.m in Sources */,
 				DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */,
+				DBF852801BEA46C4000B2958 /* FDSlideBar.m in Sources */,
+				DBF852971BEA55B6000B2958 /* TestVC.m in Sources */,
+				DBF852811BEA46C4000B2958 /* FDSlideBarItem.m in Sources */,
 				DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */,
 				DB7435291BCAA4960066C475 /* newsRecord.m in Sources */,
 			);
