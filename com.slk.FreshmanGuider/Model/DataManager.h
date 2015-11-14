@@ -3,7 +3,7 @@
 //  com.slk.FreshmanGuider
 //
 //  Created by Takanashirin on 15/10/12.
-//  Copyright © 2015年 孙凌昆. All rights reserved.
+//  Copyright © 2015年 Takanashirin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -23,6 +23,39 @@
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="309.08666666666664"/>
         </scene>
+        <!--Profile Table View Controller-->
+        <scene sceneID="zU5-wE-DXu">
+            <objects>
+                <tableViewController id="Rrh-vh-hbI" customClass="ProfileTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="l7Z-Dj-Xah">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="separatorColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profilecell" id="CFv-AL-6S9">
+                                <rect key="frame" x="0.0" y="50" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CFv-AL-6S9" id="gpN-rv-eoh">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rrh-vh-hbI" id="AtX-HL-0j9"/>
+                            <outlet property="delegate" destination="Rrh-vh-hbI" id="Lpf-0L-Ynd"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableview" destination="l7Z-Dj-Xah" id="EP9-8e-aDX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8N-tX-81G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="504"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="OAu-W7-MR2">
             <objects>
@@ -57,7 +90,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJ3-3s-wpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="339"/>
+            <point key="canvasLocation" x="206" y="-375"/>
         </scene>
         <!--News Table View Controller-->
         <scene sceneID="1yz-5M-SPH">
@@ -85,7 +118,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Xv-YY-eAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="1032"/>
+            <point key="canvasLocation" x="1048" y="-366"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="DXg-Fz-AbH">
@@ -111,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83D-HZ-2EH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166" y="626"/>
+            <point key="canvasLocation" x="616" y="-386"/>
         </scene>
     </scenes>
 </document>

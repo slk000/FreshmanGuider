@@ -2,13 +2,12 @@
 //  AppDelegate.m
 //  NewsDemo
 //
-//  Created by 孙凌昆 on 15/10/9.
-//  Copyright (c) 2015年 孙凌昆. All rights reserved.
+//  Created by Takanashirin on 15/10/9.
+//  Copyright (c) 2015年 Takanashirin. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "TableViewController.h"
 
 #import "RssReader.h"
 #import <CFNetwork/CFNetwork.h>

@@ -2,14 +2,13 @@
 //  ViewController.m
 //  NewsDemo
 //
-//  Created by 孙凌昆 on 15/2/9.
-//  Copyright (c) 2015年 孙凌昆. All rights reserved.
+//  Created by Takanashirin on 15/2/9.
+//  Copyright (c) 2015年 Takanashirin. All rights reserved.
 //
 
 
 
 #import "NewsTableViewCell.h"
-//#import "TableViewController.h"
 
 #import "DataManager.h"
 #import "newsRecord.h"
@@ -19,14 +18,14 @@
 #import "NewsTableViewController.h"
 #import "NavViewController.h"
 #import "AssistTableViewController.h"
-
+#import "ProfileTableViewController.h"
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UIScrollView *scrollView;
     int currentIndex;
     UITableView *newsTableView;
     UITableView *assistTableView;
     UIView *navView;
-    UITableView *tableView4;
+    UITableView *profileTableView;
     float titleHeight;
     float bgViewHeight;
     SwitchView *switchView;
@@ -36,6 +35,7 @@
     NewsTableViewController *newsTableVC; //Tab 1
     NavViewController *navVC;
     AssistTableViewController *assistTableVC;
+    ProfileTableViewController *profileVC;
     
     
     
@@ -55,6 +55,7 @@
     newsTableVC = [[NewsTableViewController alloc]init];
     navVC = [[NavViewController alloc]init];
     assistTableVC = [[AssistTableViewController alloc]init];
+    profileVC = [[ProfileTableViewController alloc]init];
     
     
     [self initTitle];
@@ -195,21 +196,23 @@
             }
 
         }else if (currentIndex==4){
-            if (tableView4==nil) {
-                tableView4=[[UITableView alloc] initWithFrame:CGRectMake(WScreen*3, 0, WScreen, bgViewHeight) style:UITableViewStylePlain];
-                [scrollView addSubview:tableView4];
-                tableView4.showsVerticalScrollIndicator = NO;
+            if (profileTableView==nil) {
+//                profileTableView=[[UITableView alloc] initWithFrame:CGRectMake(WScreen*3, 0, WScreen, bgViewHeight) style:UITableViewStylePlain];
+                profileTableView = profileVC.tableView;
+                profileVC.view.frame=CGRectMake(WScreen*3, 0, WScreen, bgViewHeight);
+                [scrollView addSubview:profileTableView];
+                profileTableView.showsVerticalScrollIndicator = NO;
 
                 UIImageView *title4=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, WScreen, 185)];
-                title4.image=[UIImage imageNamed:@"t3"];
-                [tableView4 setTableHeaderView:title4];
+                title4.image=[UIImage imageNamed:@"image1.jpg"];
+                [profileTableView setTableHeaderView:title4];
                 
                 
-                tableView4.tag=14;
+                profileTableView.tag=14;
                 
-                tableView4.dataSource=self;
-                tableView4.delegate=self;
-                tableView4.separatorStyle=UITableViewCellSeparatorStyleNone;
+//                profileTableView.dataSource=self;
+//                profileTableView.delegate=self;
+                profileTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
                 
             }
 

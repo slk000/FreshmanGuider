@@ -3,7 +3,7 @@
 //  com.slk.FreshmanGuider
 //
 //  Created by Takanashirin on 15/11/6.
-//  Copyright © 2015年 孙凌昆. All rights reserved.
+//  Copyright © 2015年 Takanashirin. All rights reserved.
 //
 
 #import "NewsTableViewController.h"
@@ -22,7 +22,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     abcd = 10;
 //    self.view.frame = CGRectMake(WScreen, 0, 100, 100);
-//        self.view.backgroundColor = [UIColor redColor];
+    
+;
 
 }
 - (void)viewDidLoad {
@@ -42,7 +43,7 @@
 //        [data addObject:[NSString stringWithFormat:@"%d", i]];
 //    }
 //    [data addObject:nil];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:0.96f green:0.96f blue:0.96f alpha:1.00f];
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         abcd++;
