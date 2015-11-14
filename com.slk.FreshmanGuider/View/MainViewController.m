@@ -44,10 +44,10 @@
 @end
 
 @implementation MainViewController
-@synthesize isDownloadedNews;
+//@synthesize isDownloadedNews;
 - (void)viewDidLoad {
-    //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reloadNews) name:@"reloadnews" object:nil];
-    isDownloadedNews=10;
+//    isDownloadedNews=10;
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reloadNews) name:@"reloadnews" object:nil];
 
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -88,9 +88,10 @@
 }
 - (void)reloadNews{
     NSLog(@"Notification");
-    isDownloadedNews = [[[DataManager sharedDataManager]getNews] count];
+//    isDownloadedNews = [[[DataManager sharedDataManager]getNews] count];
     [newsTableView reloadData];
 }
+
 -(void)initTitle{
     UILabel *AppTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     
@@ -143,7 +144,7 @@
     newsTableView.delegate=newsTableVC;
     
     newsTableView.tag=11;
-    newsTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+//    newsTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     
     UIImageView *newsTabHeadImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, WScreen, 185)];
     newsTabHeadImage.image=[UIImage imageNamed:@"image1.jpg"];
@@ -161,26 +162,15 @@
             
         }else if (currentIndex==2){
             if (assistTableView==nil) {
-//                tableView2=[[UITableView alloc] initWithFrame:CGRectMake(WScreen, 0, WScreen, bgViewHeight) style:UITableViewStylePlain];
                 assistTableView=assistTableVC.tableView;
                 assistTableVC.view.frame = CGRectMake(WScreen, 0, WScreen, bgViewHeight);
                 [self addChildViewController:newsTableVC];
                 
 
-//                tableView2.frame = CGRectMake(WScreen, 0, WScreen, bgViewHeight);
-//                [tableView2 registerClass:[newsTableVC.tableView  forCellReuseIdentifier:@"reuseIdentifier"];
                 [scrollView addSubview:assistTableView];
-                
-//                [vct didMoveToParentViewController:scrollView];
-//
-//                tableView2.showsVerticalScrollIndicator = NO;
-////
+
                 assistTableView.tag=12;
-//                [assistTableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"newscell"];
 
-
-//                tableView2.dataSource=newsTableVC;
-//                tableView2.delegate=newsTableVC;
                 assistTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
                 
                 
@@ -255,126 +245,7 @@
     
 }
 
-#pragma mark tableView
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (tableView.tag==11) {
-        return isDownloadedNews;
-    }else if (tableView.tag==12){
-        return 1;
-        
-    }else if (tableView.tag==13){
-        return 41;
-        
-    }else if (tableView.tag==14){
-        
-        return 21;
-    }
-    return 11;
-}
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    if (tableView.tag==11) {
-  
-        NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id1"];
-        
-        
-        if (cell == nil) {
-            cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id1"];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
-            
-            
-        }
-        // Configure the cell...
-        cell.mainIV.image=[UIImage imageNamed:@"l1"];
-        cell.mainLabel.text=@"塞浦路斯将为俄供海外基地";
-        cell.detailLabel.text=@"该基地距离英军安克罗蒂里空军基地仅50公里。";
-
-        if ([(((DataManager *)[DataManager sharedDataManager]).newsList) count] >1) {
-            newsRecord *rec = ((newsRecord *)((DataManager *)[DataManager sharedDataManager]).newsList[indexPath.row]);
-            cell.mainLabel.text = rec.title;
-            cell.detailLabel.text=rec.newsDate;
-        }
-        
-        return cell;
-        
-    }else if (tableView.tag==12){
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id2"];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"id2"];
-            cell.contentView.backgroundColor=[UIColor colorWithRed:0.96f green:0.96f blue:0.96f alpha:1.00f];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
-            UIView *lineView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, WScreen, 8)];
-            [cell.contentView addSubview:lineView];
-            lineView.backgroundColor=[UIColor colorWithRed:0.91f green:0.91f blue:0.91f alpha:1.00f];
-        }
-        // Configure the cell...
-        cell.textLabel.text=@"我小时偷西瓜，爪农来了。大一点的跑了，我也要跑，可太小跳不过水沟，刚哭，爪农就说不要跳，小心掉下去。后来还是爪农抱我过去，还把我偷的不熟西瓜拿了，换了个好的给我。谢谢了哈";
-        cell.textLabel.numberOfLines=0;
-        return cell;
-        
-        
-        
-    }else if (tableView.tag==13){
-        
-        NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id1"];
-        
-        
-        if (cell == nil) {
-            cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id1"];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
-            
-            
-        }
-        // Configure the cell...
-        cell.mainIV.image=[UIImage imageNamed:@"l2"];
-        cell.mainLabel.text=@"日：疑似朝5枚导弹坠入日本海";
-        cell.detailLabel.text=@"该导弹发射前无需注入燃料，外界事前较难掌握动向。";
-        return cell;
-        
-        
-        
-    }else if (tableView.tag==14){
-        
-        
-        NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id1"];
-        
-        
-        if (cell == nil) {
-            cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id1"];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
-            
-            
-        }
-        // Configure the cell...
-        cell.mainIV.image=[UIImage imageNamed:@"l3"];
-        cell.mainLabel.text=@"美公布高超声速武器失败原因";
-        cell.detailLabel.text=@"调查组认为用于调节发动机温度的设备发生故障。";
-        return cell;
-        
-        
-        
-    }
-    return nil;
-    
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (tableView.tag==11) {
-        return 100;
-    }else if (tableView.tag==12){
-        return 170;
-        
-    }else if (tableView.tag==13){
-        return 100;
-        
-    }else if (tableView.tag==14){
-        
-        return 100;
-    }
-    return 11;
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

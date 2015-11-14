@@ -31,20 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    
-//    self.view.backgroundColor = [UIColor redColor];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
     data = ((DataManager *)[DataManager sharedDataManager]).newsList;
-//    data = [[NSMutableArray alloc]initWithCapacity:50];
-//    for (int i = 0; i < 50; i++) {
-//        [data addObject:[NSString stringWithFormat:@"%d", i]];
-//    }
-//    [data addObject:nil];
+
     self.view.backgroundColor = [UIColor colorWithRed:0.96f green:0.96f blue:0.96f alpha:1.00f];
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -87,6 +76,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
+    if ([data count] <=1 ) {
+        return 1;
+    }
     return abcd;
 }
 
@@ -97,14 +89,14 @@
 
     // Configure the cell...
     if ([data count] <= 1) {
-        cell.mainLabel.text=[NSString stringWithFormat:@"%@ title",((newsRecord *)data[0]).title];
-        cell.detailLabel.text=[NSString stringWithFormat:@"%@ detail",((newsRecord *)data[0]).newsDate];
-        cell.mainIV.image=[UIImage imageNamed:@"l1"];
+        cell.mainLabel.text=[NSString stringWithFormat:@"加载中..."];
+        cell.detailLabel.text=[NSString stringWithFormat:@""];
+//        cell.mainIV.image=[UIImage imageNamed:@"l1"];
 
     }
     else{
-        cell.mainLabel.text=[NSString stringWithFormat:@"%@ title",((newsRecord *)data[indexPath.row]).title];
-        cell.detailLabel.text=[NSString stringWithFormat:@"%@ detail",((newsRecord *)data[indexPath.row]).newsDate];
+        cell.mainLabel.text=[NSString stringWithFormat:@"%@",((newsRecord *)data[indexPath.row+1]).title];
+        cell.detailLabel.text=[NSString stringWithFormat:@"%@",((newsRecord *)data[indexPath.row+1]).newsDate];
         cell.mainIV.image=[UIImage imageNamed:@"l1"];
     }
     
@@ -116,8 +108,8 @@
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     NewsDetailViewController *newsDetailVC = [sb instantiateViewControllerWithIdentifier:@"NewsDetail"];
-    newsDetailVC.URL = ((newsRecord *)data[indexPath.row]).link;
-    newsDetailVC.title = ((newsRecord *)data[indexPath.row]).title;
+    newsDetailVC.URL = ((newsRecord *)data[indexPath.row+1]).link;
+    newsDetailVC.title = ((newsRecord *)data[indexPath.row+1]).title;
     [self.parentViewController.navigationController pushViewController:newsDetailVC animated:YES];
     
 }

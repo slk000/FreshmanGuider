@@ -25,6 +25,7 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     MainViewController *VC=[[MainViewController alloc] init];
     UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:VC];
     self.window.rootViewController=nav;
@@ -123,22 +124,13 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
     RssReader *task = [[RssReader alloc] initWithData:newsData
                                     completionHandler:^(NSArray *newsList) {
                                         dispatch_async(dispatch_get_main_queue(), ^{
-                                            //                                            NSLog(@"newslist: %@", newsList);
-                                            //                                            NSLog(@"shared:%@",[[DataManager sharedDataManager]getNews]);
-                                            
-                                            //                                            [[[DataManager sharedDataManager]getNews]addObjectsFromArray:newsList];
-                                            //                                            [[DataManager ] addObjectsFromArray:newsList];
-                                            
-                                            
-                                            
-                                            //                                            [((DataManager *)[DataManager sharedDataManager]).newsList addObjectsFromArray:newsList];
                                             for (newsRecord *rec in newsList) {
                                                 NSLog(@"add: %@", rec);
                                                 
                                                 [((DataManager *)[DataManager sharedDataManager]).newsList addObject:rec];
                                             }
                                             printf("db add in delegate: %p", [DataManager sharedDataManager]);
-                                           //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadnews" object:self];
+                                           [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadnews" object:self];
                                             
                                             
                                             //
@@ -156,9 +148,7 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
     };
     
     [queue addOperation:task];
-    self.newsData = nil;
-    //    [((DataManager *)[DataManager sharedDataManager]).newsList addObjectsFromArray:self.newsRecords];
-    
+    self.newsData = nil;    
 }
 
 //连接失败

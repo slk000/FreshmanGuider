@@ -20,6 +20,10 @@
     webView.scalesPageToFit = YES;
     webView.delegate = self;
     
+    UIColor * color = [UIColor whiteColor];
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
+    
     [activityIndicatorView setCenter: self.view.center] ;
     [activityIndicatorView setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleWhite] ;
     [self.view addSubview : activityIndicatorView];
