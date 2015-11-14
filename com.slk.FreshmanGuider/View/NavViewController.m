@@ -7,9 +7,12 @@
 //
 
 #import "NavViewController.h"
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
 
-
-@interface NavViewController ()
+@interface NavViewController (){
+    BMKMapManager* _mapManager;
+    BMKMapView *mapView;
+}
 
 @end
 
@@ -18,12 +21,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:@"tePRFQBzEEZBQxzFgFIGK5Qv" generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    mapView = [[BMKMapView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    self.view = mapView;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [mapView viewWillAppear];
+    mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [mapView viewWillDisappear];
+    mapView.delegate = nil; // 不用时，置nil
 }
 
 /*

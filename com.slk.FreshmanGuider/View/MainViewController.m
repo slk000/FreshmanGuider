@@ -119,6 +119,7 @@
     scrollView.userInteractionEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.canCancelContentTouches = NO;//防止scrollview干扰地图拖放
     [self.view addSubview:scrollView];
     
     [scrollView setContentSize:CGSizeMake(WScreen * (4), bgViewHeight)];

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
 
-@interface NavViewController : UIViewController
+@interface NavViewController : UIViewController <BMKGeneralDelegate>
 
 @end

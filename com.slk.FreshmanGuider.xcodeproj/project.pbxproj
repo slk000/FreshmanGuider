@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0B88BB1BCBB3E900ED685A /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */; };
+		DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */; };
 		DB2D2B271BF71FE5001DAA62 /* AssistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B121BF71FE5001DAA62 /* AssistTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB2D2B2E1BF71FE5001DAA62 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B1B1BF71FE5001DAA62 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB2D2B2F1BF71FE5001DAA62 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B1D1BF71FE5001DAA62 /* NavViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -79,6 +81,8 @@
 /* Begin PBXFileReference section */
 		DB0B88BA1BCBB3E900ED685A /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Model/DataManager.h; sourceTree = "<group>"; };
 		DB0B88BB1BCBB3E900ED685A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
+		DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		DB2D2B111BF71FE5001DAA62 /* AssistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistTableViewController.h; sourceTree = "<group>"; };
 		DB2D2B121BF71FE5001DAA62 /* AssistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistTableViewController.m; sourceTree = "<group>"; };
 		DB2D2B1A1BF71FE5001DAA62 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */,
+				DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */,
 				DB2D2B561BF73B5D001DAA62 /* libstdc++.6.0.9.tbd in Frameworks */,
 				DBFBCD741BECF39D005325CB /* CoreGraphics.framework in Frameworks */,
 				DB2D2B541BF73B12001DAA62 /* SystemConfiguration.framework in Frameworks */,
@@ -251,6 +257,8 @@
 		DBF7D1581BA9AE200011FF73 = {
 			isa = PBXGroup;
 			children = (
+				DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */,
+				DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */,
 				DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */,
 				DB2D2B551BF73B5D001DAA62 /* libstdc++.6.0.9.tbd */,
 				DB2D2B531BF73B12001DAA62 /* SystemConfiguration.framework */,
