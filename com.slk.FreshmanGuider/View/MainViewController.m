@@ -135,12 +135,13 @@
     newsTableView = newsTableVC.tableView;
     newsTableVC.view.frame = CGRectMake(0, 0, WScreen, bgViewHeight);
     
+    [self addChildViewController:newsTableVC];
     [scrollView addSubview:newsTableView];
     newsTableView.showsVerticalScrollIndicator = NO;
-    [newsTableView setDelegate:self];
-    [newsTableView setDataSource:self];
-//    tableView1.dataSource=self;
-//    tableView1.delegate=self;
+
+    newsTableView.dataSource=newsTableVC;
+    newsTableView.delegate=newsTableVC;
+    
     newsTableView.tag=11;
     newsTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     

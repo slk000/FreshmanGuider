@@ -10,6 +10,8 @@
 #import "NewsTableViewCell.h"
 #import "DataManager.h"
 #import "newsRecord.h"
+
+#import "NewsDetailViewController.h"
 @interface NewsTableViewController (){
     NSMutableArray *data;
     int abcd;
@@ -93,17 +95,32 @@
     [tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"newscell"];
     NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newscell" forIndexPath:indexPath];
 
-    
     // Configure the cell...
+    if ([data count] <= 1) {
+        cell.mainLabel.text=[NSString stringWithFormat:@"%@ title",((newsRecord *)data[0]).title];
+        cell.detailLabel.text=[NSString stringWithFormat:@"%@ detail",((newsRecord *)data[0]).newsDate];
+        cell.mainIV.image=[UIImage imageNamed:@"l1"];
 
-    cell.mainLabel.text=[NSString stringWithFormat:@"%@ title",((newsRecord *)data[indexPath.row]).title];
-    cell.detailLabel.text=[NSString stringWithFormat:@"%@ detail",((newsRecord *)data[indexPath.row]).newsDate];
-    cell.mainIV.image=[UIImage imageNamed:@"l1"];
+    }
+    else{
+        cell.mainLabel.text=[NSString stringWithFormat:@"%@ title",((newsRecord *)data[indexPath.row]).title];
+        cell.detailLabel.text=[NSString stringWithFormat:@"%@ detail",((newsRecord *)data[indexPath.row]).newsDate];
+        cell.mainIV.image=[UIImage imageNamed:@"l1"];
+    }
+    
 
     cell.selectionStyle = UITableViewCellEditingStyleNone;
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    NewsDetailViewController *newsDetailVC = [sb instantiateViewControllerWithIdentifier:@"NewsDetail"];
+    newsDetailVC.URL = ((newsRecord *)data[indexPath.row]).link;
+    newsDetailVC.title = ((newsRecord *)data[indexPath.row]).title;
+    [self.parentViewController.navigationController pushViewController:newsDetailVC animated:YES];
+    
+}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
 }

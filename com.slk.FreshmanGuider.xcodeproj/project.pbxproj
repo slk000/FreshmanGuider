@@ -10,6 +10,7 @@
 		DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0B88BB1BCBB3E900ED685A /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 		DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */; };
 		DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */; };
+		DB29EC3E1BF7849B00B91DB3 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB29EC3D1BF7849B00B91DB3 /* NewsDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB2D2B271BF71FE5001DAA62 /* AssistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B121BF71FE5001DAA62 /* AssistTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB2D2B2E1BF71FE5001DAA62 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B1B1BF71FE5001DAA62 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB2D2B2F1BF71FE5001DAA62 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2B1D1BF71FE5001DAA62 /* NavViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -83,6 +84,8 @@
 		DB0B88BB1BCBB3E900ED685A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
 		DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DB29EC3C1BF7849B00B91DB3 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		DB29EC3D1BF7849B00B91DB3 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		DB2D2B111BF71FE5001DAA62 /* AssistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistTableViewController.h; sourceTree = "<group>"; };
 		DB2D2B121BF71FE5001DAA62 /* AssistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistTableViewController.m; sourceTree = "<group>"; };
 		DB2D2B1A1BF71FE5001DAA62 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				DB2D2B241BF71FE5001DAA62 /* SwitchView.m */,
 				DB2D2B3C1BF72AE2001DAA62 /* ProfileTableViewController.h */,
 				DB2D2B3D1BF72AE2001DAA62 /* ProfileTableViewController.m */,
+				DB29EC3C1BF7849B00B91DB3 /* NewsDetailViewController.h */,
+				DB29EC3D1BF7849B00B91DB3 /* NewsDetailViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				DBFBCDCC1BECFF98005325CB /* UIScrollView+MJRefresh.m in Sources */,
 				DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */,
 				DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */,
+				DB29EC3E1BF7849B00B91DB3 /* NewsDetailViewController.m in Sources */,
 				DBFBCDC21BECFF98005325CB /* MJRefreshAutoStateFooter.m in Sources */,
 				DB2D2B3E1BF72AE2001DAA62 /* ProfileTableViewController.m in Sources */,
 				DBFBCDC01BECFF98005325CB /* MJRefreshAutoGifFooter.m in Sources */,
