@@ -7,19 +7,51 @@
 //
 
 #import "POITableViewController.h"
-
+@interface POITableViewController(){
+//    UISearchBar *_searchBar;
+    NSMutableArray *_result;
+    NSMutableArray *_data;
+    UISearchController *_searchController;
+}
+@end
 @implementation POITableViewController
 
 -(void) viewDidLoad
 {
-    UISearchBar *b = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
-    self.tableView.tableHeaderView = b;
+    /////////////////////////////////
+    /// init search controller
+    /////////////////////////////////
+    _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    
+    _searchController.searchResultsUpdater = self;
+    
+    _searchController.dimsBackgroundDuringPresentation = NO;
+    
+    _searchController.hidesNavigationBarDuringPresentation = NO;
+    
+    _searchController.searchBar.frame = CGRectMake(_searchController.searchBar.frame.origin.x, _searchController.searchBar.frame.origin.y, _searchController.searchBar.frame.size.width, 44.0);
+    [_searchController.searchBar setPlaceholder:@"seaerch~"];
+    self.tableView.tableHeaderView = _searchController.searchBar;
+    
+    /////////////////////////////////
+    _data = [[NSMutableArray alloc]initWithCapacity:40];
+    for (int i = 0; i < 40; i++) {
+        [_data addObject:[NSString stringWithFormat:@"%d",i]];
+    }
+    _result = [[NSMutableArray alloc]initWithCapacity:10];
+
+    
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d-%d", indexPath.section,indexPath.row];
+
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"poicell"];
+    if (cell==nil) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"poicell"];
+    }
+    cell.textLabel.text = _searchController.active?_result[indexPath.row]:_data[indexPath.row];
     
     return cell;
 }
@@ -27,12 +59,13 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 8;
+    return _searchController.active?[_result count]:[_data count];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 5;
+    
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
@@ -40,13 +73,38 @@
 
     return classify[section];
 }
-//-(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-//{
-//    
-//    NSArray *classify = [[NSArray alloc]initWithObjects:@"cl",@"ea",@"aa",@"tr",@"pla", nil];
-//    
-//    return classify;
-//    //通过key来索引
-//}
+
+
+#pragma mark - Search
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+    [searchBar setShowsCancelButton:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+    [searchBar setShowsCancelButton:YES animated:YES];
+    return YES;
+    
+}
+
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+    NSString *searchString = [_searchController.searchBar text];
+    
+    NSPredicate *preicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", searchString];
+    
+    if (_result!= nil) {
+        [_result removeAllObjects];
+    }
+    //过滤数据
+    _result= [NSMutableArray arrayWithArray:[_data filteredArrayUsingPredicate:preicate]];
+    
+    [self.tableView reloadData];
+}
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 
 @end

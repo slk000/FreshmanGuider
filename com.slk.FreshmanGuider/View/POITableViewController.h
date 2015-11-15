@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface POITableViewController : UITableViewController
+@interface POITableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate,UISearchResultsUpdating>
 
 @end
