@@ -7,26 +7,27 @@
 //
 
 #import "NavViewController.h"
-
-
+#import "POITableViewController.h"
+#import "MainViewController.h"
 @interface NavViewController (){
     BMKMapManager* _mapManager;
     BMKMapView *_mapView;
     BMKLocationService* _locService;
     BMKCloudSearch* _search;
-
 }
 
 @end
 
 @implementation NavViewController
+@synthesize poiListBtn;
+@synthesize poiSearchBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-    
-    
+    poiListBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(showalert)];
+    poiSearchBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(showalert)];
+    poiSearchBtn.tintColor = poiListBtn.tintColor = [UIColor whiteColor];
     
     //初始化BMKLocationService
     //适配ios7
@@ -68,13 +69,22 @@
     [_mapView viewWillAppear];
     _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
     _search.delegate = self;
+        
+    if (self.parentViewController.navigationItem.leftBarButtonItem == nil) {
+        self.parentViewController.navigationItem.leftBarButtonItem = poiSearchBtn;
+    }
+    if (self.parentViewController.navigationItem.rightBarButtonItem == nil) {
+        self.parentViewController.navigationItem.rightBarButtonItem = poiListBtn;
+    }
 }
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [_mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
     _search.delegate = nil;
     self.parentViewController.navigationItem.leftBarButtonItem = nil;
+    self.parentViewController.navigationItem.rightBarButtonItem = nil;
 }
 
 -(void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation{
@@ -199,7 +209,26 @@
     }
 }
 
+- (void)showalert
+{
+//    UIAlertView *a = [[UIAlertView alloc]initWithTitle:@"title" message:@"nav clss" delegate:nil cancelButtonTitle:@"cc" otherButtonTitles:@"ccc", nil];
+//    [a show];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *poiVC = [sb instantiateViewControllerWithIdentifier:@"poitable"];
+    
+//    UITableView *poiView = poiVC.tableView;
+//    MainViewController *mainVC = [[MainViewController alloc]init];
+//    NSLog(@"%@", NSStringFromClass([mainVC class]));
+    NSLog(@"self.parentVC:%@", [self.parentViewController class]);
+//        [mainVC.navigationController addChildViewController:poiVC];
+//    [mainVC addChildViewController:poiVC];
 
+//    [self.view addSubview:poiVC.view];
+
+
+    [self.parentViewController.navigationController pushViewController:poiVC animated:YES];
+}
 /*
 #pragma mark - Navigation
 

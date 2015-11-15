@@ -110,6 +110,7 @@
     NewsDetailViewController *newsDetailVC = [sb instantiateViewControllerWithIdentifier:@"NewsDetail"];
     newsDetailVC.URL = ((newsRecord *)data[indexPath.row+1]).link;
     newsDetailVC.title = ((newsRecord *)data[indexPath.row+1]).title;
+    NSLog(@"newstable parentVC:%@", NSStringFromClass([self.parentViewController class]));
     [self.parentViewController.navigationController pushViewController:newsDetailVC animated:YES];
     
 }

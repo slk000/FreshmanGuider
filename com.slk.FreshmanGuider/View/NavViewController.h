@@ -13,5 +13,7 @@
 #import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
 
 @interface NavViewController : UIViewController <BMKGeneralDelegate,BMKMapViewDelegate ,BMKLocationServiceDelegate, BMKCloudSearchDelegate>
-
+- (void)showalert;
+@property (retain, nonatomic) UIBarButtonItem *poiSearchBtn;
+@property (retain, nonatomic) UIBarButtonItem *poiListBtn;
 @end

@@ -19,6 +19,9 @@
 #import "NavViewController.h"
 #import "AssistTableViewController.h"
 #import "ProfileTableViewController.h"
+
+#import "POITableViewController.h"
+
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UIScrollView *scrollView;
     int currentIndex;
@@ -29,6 +32,7 @@
     float titleHeight;
     float bgViewHeight;
     SwitchView *switchView;
+    
     
 //    NavViewController *newsVC;
     
@@ -180,19 +184,27 @@
             }
 
         }else if (currentIndex==3){
-            
-            UIBarButtonItem *poiListBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(alert)];
-            poiListBtn.tintColor = [UIColor whiteColor];
-            self.navigationItem.rightBarButtonItem = poiListBtn;
-            
-            UIBarButtonItem *poiSearchBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(alert)];
-            poiSearchBtn.tintColor = [UIColor whiteColor];
-            
-            self.navigationItem.leftBarButtonItem = poiSearchBtn;
+            ////////////////////////////////////
+            /// Add MainVC left & right Btn
+            ////////////////////////////////////
+            //    POITableViewController *poiVC = [[POITableViewController alloc]init];
+            //    UITableView *poiView = poiVC.tableView;
+//            UIBarButtonItem *poiListBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
+//                                                                                       target:navVC
+//                                                                                       action:@selector(showalert)];
+//            poiListBtn.tintColor = [UIColor whiteColor];
+            self.navigationItem.rightBarButtonItem = navVC.poiListBtn;
+//            
+//            UIBarButtonItem *poiSearchBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+//                                                                                         target:navVC
+//                                                                                         action:@selector(showalert) ];
+//            poiSearchBtn.tintColor = [UIColor whiteColor];
+            self.navigationItem.leftBarButtonItem = navVC.poiSearchBtn;
+            ////////////////////////////////////
             
             if (navView==nil) {
                 
-         
+                [self addChildViewController:navVC]; //IMPORTANT! Or the navVC can't find its parentVC(MainVC)and the navigation controller
                 
                 navView = navVC.view;
                 navVC.view.frame = CGRectMake(WScreen*2, 0, WScreen, bgViewHeight);

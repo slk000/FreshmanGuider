@@ -34,6 +34,7 @@
 		DB2D2B561BF73B5D001DAA62 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D2B551BF73B5D001DAA62 /* libstdc++.6.0.9.tbd */; };
 		DB2D2B581BF73BE7001DAA62 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */; settings = {ASSET_TAGS = (); }; };
 		DB7435291BCAA4960066C475 /* newsRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7435281BCAA4960066C475 /* newsRecord.m */; settings = {ASSET_TAGS = (); }; };
+		DB8BC8A91BF86F1100E6CBF0 /* POITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DBF7D1661BA9AE200011FF73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1651BA9AE200011FF73 /* main.m */; };
 		DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1701BA9AE200011FF73 /* Main.storyboard */; };
 		DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1731BA9AE200011FF73 /* Assets.xcassets */; };
@@ -119,6 +120,8 @@
 		DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 		DB7435271BCAA4960066C475 /* newsRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = newsRecord.h; path = Model/newsRecord.h; sourceTree = "<group>"; };
 		DB7435281BCAA4960066C475 /* newsRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = newsRecord.m; path = Model/newsRecord.m; sourceTree = "<group>"; };
+		DB8BC8A71BF86F1100E6CBF0 /* POITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POITableViewController.h; sourceTree = "<group>"; };
+		DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POITableViewController.m; sourceTree = "<group>"; };
 		DBF7D1611BA9AE200011FF73 /* com.slk.FreshmanGuider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.slk.FreshmanGuider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7D1651BA9AE200011FF73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBF7D1711BA9AE200011FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 				DB2D2B3D1BF72AE2001DAA62 /* ProfileTableViewController.m */,
 				DB29EC3C1BF7849B00B91DB3 /* NewsDetailViewController.h */,
 				DB29EC3D1BF7849B00B91DB3 /* NewsDetailViewController.m */,
+				DB8BC8A71BF86F1100E6CBF0 /* POITableViewController.h */,
+				DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,7 +264,7 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		DBF7D1581BA9AE200011FF73 = {
+		DB8BC8A61BF86ED100E6CBF0 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
 				DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */,
@@ -279,6 +284,14 @@
 				DB2D2B451BF73AB8001DAA62 /* BaiduMapAPI_Utils.framework */,
 				DBFBCD751BECF3A6005325CB /* UIKit.framework */,
 				DBFBCD731BECF39D005325CB /* CoreGraphics.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DBF7D1581BA9AE200011FF73 = {
+			isa = PBXGroup;
+			children = (
+				DB8BC8A61BF86ED100E6CBF0 /* Framework */,
 				DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */,
 				DBF7D1621BA9AE200011FF73 /* Products */,
 			);
@@ -548,6 +561,7 @@
 			files = (
 				DBFBCDC11BECFF98005325CB /* MJRefreshAutoNormalFooter.m in Sources */,
 				DBFBCDC71BECFF98005325CB /* MJRefreshNormalHeader.m in Sources */,
+				DB8BC8A91BF86F1100E6CBF0 /* POITableViewController.m in Sources */,
 				DB2D2B2E1BF71FE5001DAA62 /* MainViewController.m in Sources */,
 				DB2D2B2F1BF71FE5001DAA62 /* NavViewController.m in Sources */,
 				DBF7D1661BA9AE200011FF73 /* main.m in Sources */,
