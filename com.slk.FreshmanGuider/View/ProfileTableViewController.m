@@ -33,7 +33,27 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    switch (section) {
+        case 0:
+            return 1;
+            break;
+            
+        default:
+            return 3;
+            break;
+    }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section) {
+        case 0:
+            return 100;
+            break;
+            
+        default:
+            return 44;
+            break;
+    }
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section

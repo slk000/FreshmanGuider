@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
 
-@interface NavViewController : UIViewController <BMKGeneralDelegate>
+@interface NavViewController : UIViewController <BMKGeneralDelegate,BMKMapViewDelegate ,BMKLocationServiceDelegate, BMKCloudSearchDelegate>
 
 @end

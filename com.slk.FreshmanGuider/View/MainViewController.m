@@ -46,6 +46,7 @@
 @implementation MainViewController
 //@synthesize isDownloadedNews;
 - (void)viewDidLoad {
+
 //    isDownloadedNews=10;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reloadNews) name:@"reloadnews" object:nil];
 
@@ -106,8 +107,7 @@
     AppTitle.text = @"FreshmanGuider";
     self.navigationItem.titleView = AppTitle;
 
-    UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadNews)];
-    self.navigationItem.leftBarButtonItem = btn;
+
 }
 -(void)initScroll{
  
@@ -158,9 +158,12 @@
         [scrollView setContentOffset:CGPointMake(WScreen* (currentIndex-1),0)];
         
         if (currentIndex==1) {
-            
+            self.navigationItem.leftBarButtonItem = nil;
+            self.navigationItem.rightBarButtonItem = nil;
             
         }else if (currentIndex==2){
+            self.navigationItem.leftBarButtonItem = nil;
+            self.navigationItem.rightBarButtonItem = nil;
             if (assistTableView==nil) {
                 assistTableView=assistTableVC.tableView;
                 assistTableVC.view.frame = CGRectMake(WScreen, 0, WScreen, bgViewHeight);
@@ -177,7 +180,19 @@
             }
 
         }else if (currentIndex==3){
+            
+            UIBarButtonItem *poiListBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(alert)];
+            poiListBtn.tintColor = [UIColor whiteColor];
+            self.navigationItem.rightBarButtonItem = poiListBtn;
+            
+            UIBarButtonItem *poiSearchBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(alert)];
+            poiSearchBtn.tintColor = [UIColor whiteColor];
+            
+            self.navigationItem.leftBarButtonItem = poiSearchBtn;
+            
             if (navView==nil) {
+                
+         
                 
                 navView = navVC.view;
                 navVC.view.frame = CGRectMake(WScreen*2, 0, WScreen, bgViewHeight);
@@ -188,6 +203,8 @@
             }
 
         }else if (currentIndex==4){
+            self.navigationItem.leftBarButtonItem = nil;
+            self.navigationItem.rightBarButtonItem = nil;
             if (profileTableView==nil) {
 //                profileTableView=[[UITableView alloc] initWithFrame:CGRectMake(WScreen*3, 0, WScreen, bgViewHeight) style:UITableViewStylePlain];
                 profileTableView = profileVC.tableView;
@@ -250,5 +267,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)alert{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"title" message:@"meddage" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil];
+    [alert show];
+}
 @end
