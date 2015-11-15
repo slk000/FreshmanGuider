@@ -25,6 +25,7 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     
     MainViewController *VC=[[MainViewController alloc] init];
     UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:VC];
