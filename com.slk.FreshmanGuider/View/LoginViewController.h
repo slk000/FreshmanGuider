@@ -1,0 +1,13 @@
+//
+//  LoginViewController.h
+//  com.slk.FreshmanGuider
+//
+//  Created by Takanashirin on 15/11/17.
+//  Copyright © 2015年 孙凌昆. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+
+@end

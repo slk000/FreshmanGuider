@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB018F131BFB118700FC5021 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F101BFB118700FC5021 /* AVOSCloud.framework */; settings = {ASSET_TAGS = (); }; };
+		DB018F151BFB118700FC5021 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F121BFB118700FC5021 /* AVOSCloudIM.framework */; settings = {ASSET_TAGS = (); }; };
+		DB018F171BFB140600FC5021 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F161BFB140600FC5021 /* MobileCoreServices.framework */; };
 		DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0B88BB1BCBB3E900ED685A /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 		DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */; };
 		DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */; };
@@ -33,6 +36,11 @@
 		DB2D2B541BF73B12001DAA62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D2B531BF73B12001DAA62 /* SystemConfiguration.framework */; };
 		DB2D2B561BF73B5D001DAA62 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D2B551BF73B5D001DAA62 /* libstdc++.6.0.9.tbd */; };
 		DB2D2B581BF73BE7001DAA62 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */; settings = {ASSET_TAGS = (); }; };
+		DB5FD08B1BFB362A007B9F6B /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5FD0871BFB362A007B9F6B /* DeformationButton.m */; settings = {ASSET_TAGS = (); }; };
+		DB5FD08C1BFB362A007B9F6B /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5FD08A1BFB362A007B9F6B /* MMMaterialDesignSpinner.m */; settings = {ASSET_TAGS = (); }; };
+		DB5FD0901BFB37F4007B9F6B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5FD08F1BFB37F4007B9F6B /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DB5FD0971BFB3FD9007B9F6B /* InputText.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5FD0961BFB3FD9007B9F6B /* InputText.m */; settings = {ASSET_TAGS = (); }; };
+		DB5FD09A1BFB4176007B9F6B /* UIView+XD.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5FD0991BFB4176007B9F6B /* UIView+XD.m */; settings = {ASSET_TAGS = (); }; };
 		DB7435291BCAA4960066C475 /* newsRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7435281BCAA4960066C475 /* newsRecord.m */; settings = {ASSET_TAGS = (); }; };
 		DB8BC8A91BF86F1100E6CBF0 /* POITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DBF7D1661BA9AE200011FF73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D1651BA9AE200011FF73 /* main.m */; };
@@ -60,6 +68,7 @@
 		DBFBCDCB1BECFF98005325CB /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBCDB61BECFF98005325CB /* UIScrollView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 		DBFBCDCC1BECFF98005325CB /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBCDB81BECFF98005325CB /* UIScrollView+MJRefresh.m */; settings = {ASSET_TAGS = (); }; };
 		DBFBCDCD1BECFF98005325CB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBCDBA1BECFF98005325CB /* UIView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
+		DBFCA5DD1BFB791100F7878A /* loginbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFCA5DC1BFB791100F7878A /* loginbg.jpg */; settings = {ASSET_TAGS = (); }; };
 		DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -81,6 +90,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB018F101BFB118700FC5021 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = leancloud/AVOSCloud.framework; sourceTree = "<group>"; };
+		DB018F111BFB118700FC5021 /* AVOSCloudCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudCrashReporting.framework; path = leancloud/AVOSCloudCrashReporting.framework; sourceTree = "<group>"; };
+		DB018F121BFB118700FC5021 /* AVOSCloudIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudIM.framework; path = leancloud/AVOSCloudIM.framework; sourceTree = "<group>"; };
+		DB018F161BFB140600FC5021 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DB0B88BA1BCBB3E900ED685A /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Model/DataManager.h; sourceTree = "<group>"; };
 		DB0B88BB1BCBB3E900ED685A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
 		DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -118,6 +131,16 @@
 		DB2D2B531BF73B12001DAA62 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DB2D2B551BF73B5D001DAA62 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		DB5FD0861BFB362A007B9F6B /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeformationButton.h; path = DeformationButton/DeformationButton.h; sourceTree = "<group>"; };
+		DB5FD0871BFB362A007B9F6B /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeformationButton.m; path = DeformationButton/DeformationButton.m; sourceTree = "<group>"; };
+		DB5FD0891BFB362A007B9F6B /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		DB5FD08A1BFB362A007B9F6B /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		DB5FD08E1BFB37F4007B9F6B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DB5FD08F1BFB37F4007B9F6B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DB5FD0951BFB3FD9007B9F6B /* InputText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputText.h; path = InputText/InputText.h; sourceTree = SOURCE_ROOT; };
+		DB5FD0961BFB3FD9007B9F6B /* InputText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputText.m; path = InputText/InputText.m; sourceTree = SOURCE_ROOT; };
+		DB5FD0981BFB4176007B9F6B /* UIView+XD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+XD.h"; path = "InputText/UIView+XD.h"; sourceTree = SOURCE_ROOT; };
+		DB5FD0991BFB4176007B9F6B /* UIView+XD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+XD.m"; path = "InputText/UIView+XD.m"; sourceTree = SOURCE_ROOT; };
 		DB7435271BCAA4960066C475 /* newsRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = newsRecord.h; path = Model/newsRecord.h; sourceTree = "<group>"; };
 		DB7435281BCAA4960066C475 /* newsRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = newsRecord.m; path = Model/newsRecord.m; sourceTree = "<group>"; };
 		DB8BC8A71BF86F1100E6CBF0 /* POITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POITableViewController.h; sourceTree = "<group>"; };
@@ -171,6 +194,7 @@
 		DBFBCDB81BECFF98005325CB /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		DBFBCDB91BECFF98005325CB /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		DBFBCDBA1BECFF98005325CB /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		DBFCA5DC1BFB791100F7878A /* loginbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginbg.jpg; sourceTree = "<group>"; };
 		DBFE9E7B1BCAAA1A0014A677 /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = Model/RssReader.h; sourceTree = "<group>"; };
 		DBFE9E7C1BCAAA1A0014A677 /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = Model/RssReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,14 +204,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */,
 				DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */,
+				DB2D2B4E1BF73AE9001DAA62 /* CoreLocation.framework in Frameworks */,
+				DB018F171BFB140600FC5021 /* MobileCoreServices.framework in Frameworks */,
+				DB2D2B541BF73B12001DAA62 /* SystemConfiguration.framework in Frameworks */,
+				DB018F131BFB118700FC5021 /* AVOSCloud.framework in Frameworks */,
+				DB018F151BFB118700FC5021 /* AVOSCloudIM.framework in Frameworks */,
+				DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */,
 				DB2D2B561BF73B5D001DAA62 /* libstdc++.6.0.9.tbd in Frameworks */,
 				DBFBCD741BECF39D005325CB /* CoreGraphics.framework in Frameworks */,
-				DB2D2B541BF73B12001DAA62 /* SystemConfiguration.framework in Frameworks */,
 				DB2D2B521BF73B00001DAA62 /* OpenGLES.framework in Frameworks */,
 				DB2D2B501BF73AF5001DAA62 /* QuartzCore.framework in Frameworks */,
-				DB2D2B4E1BF73AE9001DAA62 /* CoreLocation.framework in Frameworks */,
 				DB2D2B461BF73AB8001DAA62 /* BaiduMapAPI_Base.framework in Frameworks */,
 				DB2D2B471BF73AB8001DAA62 /* BaiduMapAPI_Cloud.framework in Frameworks */,
 				DB2D2B481BF73AB8001DAA62 /* BaiduMapAPI_Location.framework in Frameworks */,
@@ -239,6 +266,8 @@
 				DB29EC3D1BF7849B00B91DB3 /* NewsDetailViewController.m */,
 				DB8BC8A71BF86F1100E6CBF0 /* POITableViewController.h */,
 				DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */,
+				DB5FD08E1BFB37F4007B9F6B /* LoginViewController.h */,
+				DB5FD08F1BFB37F4007B9F6B /* LoginViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,9 +275,42 @@
 		DB2D2B131BF71FE5001DAA62 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				DBFCA5DC1BFB791100F7878A /* loginbg.jpg */,
 				DB2D2B3A1BF7221F001DAA62 /* image1.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		DB5FD0881BFB362A007B9F6B /* MMMaterialDesignSpinner-master */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FD0891BFB362A007B9F6B /* MMMaterialDesignSpinner.h */,
+				DB5FD08A1BFB362A007B9F6B /* MMMaterialDesignSpinner.m */,
+			);
+			name = "MMMaterialDesignSpinner-master";
+			path = "DeformationButton/MMMaterialDesignSpinner-master";
+			sourceTree = "<group>";
+		};
+		DB5FD08D1BFB3631007B9F6B /* DeformationButton */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FD0861BFB362A007B9F6B /* DeformationButton.h */,
+				DB5FD0871BFB362A007B9F6B /* DeformationButton.m */,
+				DB5FD0881BFB362A007B9F6B /* MMMaterialDesignSpinner-master */,
+			);
+			name = DeformationButton;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DB5FD0941BFB3F7B007B9F6B /* InputText */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FD0981BFB4176007B9F6B /* UIView+XD.h */,
+				DB5FD0991BFB4176007B9F6B /* UIView+XD.m */,
+				DB5FD0951BFB3FD9007B9F6B /* InputText.h */,
+				DB5FD0961BFB3FD9007B9F6B /* InputText.m */,
+			);
+			name = InputText;
 			sourceTree = "<group>";
 		};
 		DB7435261BCAA42A0066C475 /* Model */ = {
@@ -267,7 +329,11 @@
 		DB8BC8A61BF86ED100E6CBF0 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				DB018F101BFB118700FC5021 /* AVOSCloud.framework */,
+				DB018F111BFB118700FC5021 /* AVOSCloudCrashReporting.framework */,
+				DB018F121BFB118700FC5021 /* AVOSCloudIM.framework */,
 				DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */,
+				DB018F161BFB140600FC5021 /* MobileCoreServices.framework */,
 				DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */,
 				DB2D2B571BF73BE7001DAA62 /* mapapi.bundle */,
 				DB2D2B551BF73B5D001DAA62 /* libstdc++.6.0.9.tbd */,
@@ -310,6 +376,8 @@
 		DBF7D1631BA9AE200011FF73 /* com.slk.FreshmanGuider */ = {
 			isa = PBXGroup;
 			children = (
+				DB5FD0941BFB3F7B007B9F6B /* InputText */,
+				DB5FD08D1BFB3631007B9F6B /* DeformationButton */,
 				DBFBCD8E1BECFF98005325CB /* MJRefresh */,
 				DBFBCD7B1BECF4DC005325CB /* Header.h */,
 				DB2D2B101BF71FE5001DAA62 /* View */,
@@ -532,6 +600,7 @@
 				DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */,
 				DB2D2B3B1BF7221F001DAA62 /* image1.jpg in Resources */,
 				DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */,
+				DBFCA5DD1BFB791100F7878A /* loginbg.jpg in Resources */,
 				DB2D2B581BF73BE7001DAA62 /* mapapi.bundle in Resources */,
 				DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */,
 				DBFBCDC91BECFF98005325CB /* MJRefresh.bundle in Resources */,
@@ -562,14 +631,18 @@
 				DBFBCDC11BECFF98005325CB /* MJRefreshAutoNormalFooter.m in Sources */,
 				DBFBCDC71BECFF98005325CB /* MJRefreshNormalHeader.m in Sources */,
 				DB8BC8A91BF86F1100E6CBF0 /* POITableViewController.m in Sources */,
+				DB5FD0971BFB3FD9007B9F6B /* InputText.m in Sources */,
 				DB2D2B2E1BF71FE5001DAA62 /* MainViewController.m in Sources */,
+				DB5FD0901BFB37F4007B9F6B /* LoginViewController.m in Sources */,
 				DB2D2B2F1BF71FE5001DAA62 /* NavViewController.m in Sources */,
 				DBF7D1661BA9AE200011FF73 /* main.m in Sources */,
 				DBFBCDCC1BECFF98005325CB /* UIScrollView+MJRefresh.m in Sources */,
 				DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */,
 				DBFE9E7D1BCAAA1A0014A677 /* RssReader.m in Sources */,
+				DB5FD08B1BFB362A007B9F6B /* DeformationButton.m in Sources */,
 				DB29EC3E1BF7849B00B91DB3 /* NewsDetailViewController.m in Sources */,
 				DBFBCDC21BECFF98005325CB /* MJRefreshAutoStateFooter.m in Sources */,
+				DB5FD08C1BFB362A007B9F6B /* MMMaterialDesignSpinner.m in Sources */,
 				DB2D2B3E1BF72AE2001DAA62 /* ProfileTableViewController.m in Sources */,
 				DBFBCDC01BECFF98005325CB /* MJRefreshAutoGifFooter.m in Sources */,
 				DBFBCDC41BECFF98005325CB /* MJRefreshBackNormalFooter.m in Sources */,
@@ -590,6 +663,7 @@
 				DB2D2B271BF71FE5001DAA62 /* AssistTableViewController.m in Sources */,
 				DBFBCDCB1BECFF98005325CB /* UIScrollView+MJExtension.m in Sources */,
 				DBFBCDBF1BECFF98005325CB /* MJRefreshHeader.m in Sources */,
+				DB5FD09A1BFB4176007B9F6B /* UIView+XD.m in Sources */,
 				DBFBCDC81BECFF98005325CB /* MJRefreshStateHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,12 +806,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduMapAPI",
+					"$(PROJECT_DIR)/leancloud",
 				);
 				GCC_PREFIX_HEADER = com.slk.FreshmanGuider/Header.h;
 				INFOPLIST_FILE = com.slk.FreshmanGuider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-licucore",
+					"-ObjC",
+					"-lc++",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "slk.com-slk-FreshmanGuider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -750,12 +832,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduMapAPI",
+					"$(PROJECT_DIR)/leancloud",
 				);
 				GCC_PREFIX_HEADER = com.slk.FreshmanGuider/Header.h;
 				INFOPLIST_FILE = com.slk.FreshmanGuider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-licucore",
+					"-ObjC",
+					"-lc++",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "slk.com-slk-FreshmanGuider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

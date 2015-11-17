@@ -13,7 +13,7 @@
 #import <CFNetwork/CFNetwork.h>
 #import "DataManager.h"
 #import "newsRecord.h"
-static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.xml";
+static NSString *const RSS_URL = @"http://news.qq.com/newsgn/rss_newsgn.xml";
 
 @interface AppDelegate ()
 
@@ -25,14 +25,30 @@ static NSString *const TopPaidAppsFeed = @"http://news.qq.com/newsgn/rss_newsgn.
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+///////////////////////////////////////////////
+//  Init Leancloud SDK
+///////////////////////////////////////////////
+//    [AVOSCloud setApplicationId:@"ohqhxu3mgoj2eyj6ed02yliytmbes3mwhha8ylnc215h0bgk"
+//                      clientKey:@"6j8fuggqkbc5m86b8mp4pf2no170i5m7vmax5iypmi72wldc"];
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+///////////////////////////////////////////////
+//  Change the color of text in the status bar
+///////////////////////////////////////////////
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
-    
+///////////////////////////////////////////////
+//  Init MainView
+///////////////////////////////////////////////
     MainViewController *VC=[[MainViewController alloc] init];
     UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:VC];
     self.window.rootViewController=nav;
     [nav.navigationBar setBarTintColor:[UIColor colorWithRed:0.86 green:0.2 blue:0.22 alpha:1]];
 ///////////////////////////////////////////////
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:TopPaidAppsFeed]cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60];
+//  Init Internet Connection
+///////////////////////////////////////////////
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:RSS_URL]cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60];
     
     self.newsFeedConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
     

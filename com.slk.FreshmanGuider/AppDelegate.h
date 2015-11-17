@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <AVOSCloud/AVOSCloud.h>
 @class ListViewController;
 @class newsRecord;
 
