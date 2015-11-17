@@ -12,3 +12,7 @@
 //#include "XHRefreshControlHeader.h"
 #include "SlideMenuHeader.h"
 #endif /* Header_h */
+
+#ifndef UIVIEW_XD_H
+#include "UIView+XD.h"
+#endif

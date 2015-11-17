@@ -218,6 +218,8 @@
             self.navigationItem.leftBarButtonItem = nil;
             self.navigationItem.rightBarButtonItem = nil;
             if (profileTableView==nil) {
+                [self addChildViewController:profileVC]; //IMPORTANT! Or the navVC can't find its parentVC(MainVC)and the navigation controller
+
 //                profileTableView=[[UITableView alloc] initWithFrame:CGRectMake(WScreen*3, 0, WScreen, bgViewHeight) style:UITableViewStylePlain];
                 profileTableView = profileVC.tableView;
                 profileVC.view.frame=CGRectMake(WScreen*3, 0, WScreen, bgViewHeight);

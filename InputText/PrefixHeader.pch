@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  动态输入框
+//
+//  Created by mxd on 14/12/4.
+//  Copyright (c) 2014年 daizhe. All rights reserved.
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+#import "UIView+XD.h"
+
+#endif
