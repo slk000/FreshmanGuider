@@ -166,12 +166,16 @@
             self.navigationItem.rightBarButtonItem = nil;
             
         }else if (currentIndex==2){
+            
             self.navigationItem.leftBarButtonItem = nil;
-            self.navigationItem.rightBarButtonItem = nil;
+            
             if (assistTableView==nil) {
+                
+                [self addChildViewController:assistTableVC];
+                
                 assistTableView=assistTableVC.tableView;
                 assistTableVC.view.frame = CGRectMake(WScreen, 0, WScreen, bgViewHeight);
-                [self addChildViewController:newsTableVC];
+//                [self addChildViewController:newsTableVC];
                 
 
                 [scrollView addSubview:assistTableView];
@@ -180,8 +184,10 @@
 
                 assistTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
                 
-                
             }
+            
+            self.navigationItem.rightBarButtonItem = assistTableVC.chatBtn;
+            
 
         }else if (currentIndex==3){
             ////////////////////////////////////

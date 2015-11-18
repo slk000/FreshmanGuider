@@ -10,6 +10,7 @@
 		DB018F131BFB118700FC5021 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F101BFB118700FC5021 /* AVOSCloud.framework */; settings = {ASSET_TAGS = (); }; };
 		DB018F151BFB118700FC5021 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F121BFB118700FC5021 /* AVOSCloudIM.framework */; settings = {ASSET_TAGS = (); }; };
 		DB018F171BFB140600FC5021 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB018F161BFB140600FC5021 /* MobileCoreServices.framework */; };
+		DB0331AC1BFC9EC300C020D5 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0331AB1BFC9EC300C020D5 /* ChatViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DB0B88BC1BCBB3E900ED685A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0B88BB1BCBB3E900ED685A /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 		DB29EC391BF7838B00B91DB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */; };
 		DB29EC3B1BF7839700B91DB3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29EC3A1BF7839700B91DB3 /* libsqlite3.0.tbd */; };
@@ -94,6 +95,8 @@
 		DB018F111BFB118700FC5021 /* AVOSCloudCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudCrashReporting.framework; path = leancloud/AVOSCloudCrashReporting.framework; sourceTree = "<group>"; };
 		DB018F121BFB118700FC5021 /* AVOSCloudIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudIM.framework; path = leancloud/AVOSCloudIM.framework; sourceTree = "<group>"; };
 		DB018F161BFB140600FC5021 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DB0331AA1BFC9EC300C020D5 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		DB0331AB1BFC9EC300C020D5 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		DB0B88BA1BCBB3E900ED685A /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Model/DataManager.h; sourceTree = "<group>"; };
 		DB0B88BB1BCBB3E900ED685A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
 		DB29EC381BF7838B00B91DB3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -268,6 +271,8 @@
 				DB8BC8A81BF86F1100E6CBF0 /* POITableViewController.m */,
 				DB5FD08E1BFB37F4007B9F6B /* LoginViewController.h */,
 				DB5FD08F1BFB37F4007B9F6B /* LoginViewController.m */,
+				DB0331AA1BFC9EC300C020D5 /* ChatViewController.h */,
+				DB0331AB1BFC9EC300C020D5 /* ChatViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 				DBFBCDC11BECFF98005325CB /* MJRefreshAutoNormalFooter.m in Sources */,
 				DBFBCDC71BECFF98005325CB /* MJRefreshNormalHeader.m in Sources */,
 				DB8BC8A91BF86F1100E6CBF0 /* POITableViewController.m in Sources */,
+				DB0331AC1BFC9EC300C020D5 /* ChatViewController.m in Sources */,
 				DB5FD0971BFB3FD9007B9F6B /* InputText.m in Sources */,
 				DB2D2B2E1BF71FE5001DAA62 /* MainViewController.m in Sources */,
 				DB5FD0901BFB37F4007B9F6B /* LoginViewController.m in Sources */,

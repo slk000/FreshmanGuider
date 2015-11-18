@@ -50,6 +50,57 @@
             </objects>
             <point key="canvasLocation" x="616" y="299"/>
         </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="6Na-px-xYS">
+            <objects>
+                <viewController storyboardIdentifier="chatview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P8c-N6-tcU" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y6I-vG-73l"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgU-0u-7xl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ag3-5s-Eqf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-zi-xF7">
+                                <rect key="frame" x="0.0" y="28" width="320" height="476"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messagecell" id="AD7-A4-Nuo">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AD7-A4-Nuo" id="XL9-Z5-hoR">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV4-vW-nth">
+                                <rect key="frame" x="7" y="519" width="243" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kte-VE-vkX">
+                                <rect key="frame" x="0.0" y="269" width="320" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendBtnClicked:" destination="P8c-N6-tcU" eventType="touchUpInside" id="vQO-Kh-yXg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="sendBtn" destination="kte-VE-vkX" id="A7c-fN-ipL"/>
+                        <outlet property="sendText" destination="OV4-vW-nth" id="syi-hX-Vao"/>
+                        <outlet property="tableview" destination="uNb-zi-xF7" id="aNV-6i-VOZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnL-ix-BP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="1003"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="iGH-hq-fe4">
             <objects>

@@ -7,16 +7,23 @@
 //
 
 #import "AssistTableViewController.h"
-
+#import "ChatViewController.h"
 @implementation AssistTableViewController
+-(void)viewDidLoad{
+    _chatBtn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(show)];
 
+}
+-(void)show{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ChatViewController *chatVC = [sb instantiateViewControllerWithIdentifier:@"chatview"];
+//    [self.navigationController pushViewController:chatVC animated:YES];
+    [self presentViewController:chatVC animated:YES completion:nil];
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 10;
 }
 

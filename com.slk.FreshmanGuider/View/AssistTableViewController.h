@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AssistTableViewController : UITableViewController
-
+@property (retain, nonatomic) UIBarButtonItem *chatBtn;
 @end
