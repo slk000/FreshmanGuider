@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 #import <AVOSCloudIM/AVOSCloudIM.h>
-@interface ChatViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource, AVIMClientDelegate>
+@interface ChatViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource, AVIMClientDelegate, UITextFieldDelegate, UIKeyInput>
 @end

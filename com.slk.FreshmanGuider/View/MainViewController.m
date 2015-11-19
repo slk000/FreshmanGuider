@@ -18,6 +18,7 @@
 #import "NewsTableViewController.h"
 #import "NavViewController.h"
 #import "AssistTableViewController.h"
+#import "ChatViewController.h"
 #import "ProfileTableViewController.h"
 
 #import "POITableViewController.h"
@@ -27,6 +28,7 @@
     int currentIndex;
     UITableView *newsTableView;
     UITableView *assistTableView;
+    UIView *chatView;
     UIView *navView;
     UITableView *profileTableView;
     float titleHeight;
@@ -40,7 +42,7 @@
     NavViewController *navVC;
     AssistTableViewController *assistTableVC;
     ProfileTableViewController *profileVC;
-    
+    ChatViewController *chatVC;
     
     
 }
@@ -57,11 +59,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    newsVC = [[NavViewController alloc]init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     newsTableVC = [[NewsTableViewController alloc]init];
     navVC = [[NavViewController alloc]init];
     assistTableVC = [[AssistTableViewController alloc]init];
     profileVC = [[ProfileTableViewController alloc]init];
-    
+    chatVC = [sb instantiateViewControllerWithIdentifier:@"chatview"];
     
     [self initTitle];
     
@@ -172,6 +175,7 @@
             if (assistTableView==nil) {
                 
                 [self addChildViewController:assistTableVC];
+                [self addChildViewController:chatVC];
                 
                 assistTableView=assistTableVC.tableView;
                 assistTableVC.view.frame = CGRectMake(WScreen, 0, WScreen, bgViewHeight);

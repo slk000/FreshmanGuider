@@ -80,16 +80,22 @@
                                 <rect key="frame" x="7" y="519" width="243" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="keyboardReturnClicked:" destination="P8c-N6-tcU" eventType="editingDidEnd" id="frj-as-XRc"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kte-VE-vkX">
-                                <rect key="frame" x="0.0" y="269" width="320" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="252" y="519" width="68" height="30"/>
+                                <state key="normal" title="发送"/>
                                 <connections>
                                     <action selector="sendBtnClicked:" destination="P8c-N6-tcU" eventType="touchUpInside" id="vQO-Kh-yXg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="hideKeyborad:" destination="P8c-N6-tcU" eventType="touchUpInside" id="jRG-ju-frW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="sendBtn" destination="kte-VE-vkX" id="A7c-fN-ipL"/>
