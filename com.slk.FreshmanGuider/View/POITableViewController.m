@@ -15,9 +15,12 @@
 }
 @end
 @implementation POITableViewController
-
+@synthesize parentVC;
 -(void) viewDidLoad
 {
+
+//   self setParentViewController:
+    NSLog(@"POI parentVC:%@", self.parentVC);
     /////////////////////////////////
     /// init search controller
     /////////////////////////////////
@@ -105,6 +108,15 @@
     [searchBar resignFirstResponder];
     [searchBar setShowsCancelButton:NO animated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self dismissViewControllerAnimated:YES completion:^{
+//
+    }];
+    NSLog(@"p:%@", self.parentVC);
+    [parentVC mapSearchBound:@"宿舍"];
+//    [self.navigationController popViewControllerAnimated:YES];
+//    self.parentViewController
 }
 
 @end

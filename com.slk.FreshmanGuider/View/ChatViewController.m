@@ -45,8 +45,8 @@ if (1)
 
     AVIMConversationQuery *query = [[AVIMConversationQuery alloc]init];
     query = [_imClient conversationQuery];
-    [query whereKey:@"m" containsAllObjectsInArray:@[@"slk000", @"slk001"]];
-    [query whereKey:@"m" sizeEqualTo:2];
+    [query whereKey:@"m" containsAllObjectsInArray:@[@"slk000", [AVUser currentUser].username]];
+//    [query whereKey:@"m" sizeEqualTo:2];
     [query whereKey:AVIMAttr(@"customConversationType")  equalTo:@(1)];
     query.cachePolicy = kAVCachePolicyNetworkOnly;
 ////    // 执行查询

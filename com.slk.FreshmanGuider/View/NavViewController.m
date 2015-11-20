@@ -55,7 +55,7 @@
     _mapView = [[BMKMapView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
     self.view = _mapView;
    
-    [self mapSearchBound:@"楼"];
+//    [self mapSearchBound:@"楼"];
 
 }
 
@@ -91,7 +91,10 @@
     NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
     [_mapView updateLocationData:userLocation];
     [_mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
-    [_mapView setZoomLevel:15];
+    _mapView.showMapScaleBar = YES;
+    _mapView.showsUserLocation = YES;
+
+    [_mapView setZoomLevel:16];
     [_locService stopUserLocationService];
 }
 
@@ -215,7 +218,7 @@
 //    [a show];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *poiVC = [sb instantiateViewControllerWithIdentifier:@"poitable"];
+    POITableViewController *poiVC = [sb instantiateViewControllerWithIdentifier:@"poitable"];
     
 //    UITableView *poiView = poiVC.tableView;
 //    MainViewController *mainVC = [[MainViewController alloc]init];
@@ -225,9 +228,13 @@
 //    [mainVC addChildViewController:poiVC];
 
 //    [self.view addSubview:poiVC.view];
+//    [self addChildViewController:poiVC];
+    
+//    [self.parentViewController.navigationController pushViewController:poiVC animated:YES];
+    [self presentViewController:poiVC animated:YES completion:^{
+        poiVC.parentVC = self;
+    }];
 
-
-    [self.parentViewController.navigationController pushViewController:poiVC animated:YES];
 }
 /*
 #pragma mark - Navigation

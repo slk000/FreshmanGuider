@@ -16,4 +16,5 @@
 - (void)showalert;
 @property (retain, nonatomic) UIBarButtonItem *poiSearchBtn;
 @property (retain, nonatomic) UIBarButtonItem *poiListBtn;
+-(void)mapSearchBound:(NSString *) keyWord;
 @end
