@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="utU-rR-cMx" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zVc-rM-eOe"/>
-                        <viewControllerLayoutGuide type="bottom" id="5Fa-Vj-nlb"/>
+                        <viewControllerLayoutGuide type="top" id="vBh-oM-qgH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sCX-9k-Vbf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S9I-Zf-bjm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -28,8 +28,8 @@
             <objects>
                 <viewController storyboardIdentifier="NewsDetail" id="hoR-XN-DIP" customClass="NewsDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b6i-OA-0PP"/>
-                        <viewControllerLayoutGuide type="bottom" id="Z5L-aO-VXY"/>
+                        <viewControllerLayoutGuide type="top" id="D7v-tX-Bj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vmh-gG-Tim"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OtF-y3-Uin">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -55,8 +55,8 @@
             <objects>
                 <viewController storyboardIdentifier="chatview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P8c-N6-tcU" customClass="ChatViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y6I-vG-73l"/>
-                        <viewControllerLayoutGuide type="bottom" id="hgU-0u-7xl"/>
+                        <viewControllerLayoutGuide type="top" id="8mb-A6-STl"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWc-2e-TRS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ag3-5s-Eqf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -106,6 +106,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnL-ix-BP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="578" y="1003"/>
+        </scene>
+        <!--Map Pop View Controller-->
+        <scene sceneID="wbr-ED-u3U">
+            <objects>
+                <viewController storyboardIdentifier="mappopview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yxE-yy-J35" customClass="MapPopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TW6-4H-0g2"/>
+                        <viewControllerLayoutGuide type="bottom" id="R2e-AD-ytN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mt6-lo-rAM">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-HR-sFD">
+                                <rect key="frame" x="185" y="112" width="45" height="30"/>
+                                <state key="normal" title="到这里"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4d-7D-Wtf">
+                                <rect key="frame" x="20" y="28" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="150"/>
+                    <connections>
+                        <outlet property="poiTitleLabel" destination="E4d-7D-Wtf" id="M34-ja-AvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRr-5Y-0Qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="1049"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="iGH-hq-fe4">
@@ -237,8 +272,8 @@
             <objects>
                 <viewController storyboardIdentifier="loginview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jqy-UU-xSq" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ert-Kg-PTr"/>
-                        <viewControllerLayoutGuide type="bottom" id="YpL-cD-HKp"/>
+                        <viewControllerLayoutGuide type="top" id="NjM-CB-K8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wee-CI-Ceg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZH6-0y-Rf0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>

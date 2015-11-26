@@ -30,6 +30,7 @@ static NSString *const RSS_URL = @"http://news.qq.com/newsgn/rss_newsgn.xml";
 ///////////////////////////////////////////////
 //    [AVOSCloud setApplicationId:@"ohqhxu3mgoj2eyj6ed02yliytmbes3mwhha8ylnc215h0bgk"
 //                      clientKey:@"6j8fuggqkbc5m86b8mp4pf2no170i5m7vmax5iypmi72wldc"];
+
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 //    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
 //    [testObject setObject:@"bar" forKey:@"foo"];

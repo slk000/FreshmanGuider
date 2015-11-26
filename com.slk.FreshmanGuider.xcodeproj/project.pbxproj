@@ -48,6 +48,7 @@
 		DBF7D1721BA9AE200011FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1701BA9AE200011FF73 /* Main.storyboard */; };
 		DBF7D1741BA9AE200011FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1731BA9AE200011FF73 /* Assets.xcassets */; };
 		DBF7D1771BA9AE200011FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D1751BA9AE200011FF73 /* LaunchScreen.storyboard */; };
+		DBF912F71C041A6800B58C46 /* MapPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF912F61C041A6800B58C46 /* MapPopViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DBFBCD741BECF39D005325CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFBCD731BECF39D005325CB /* CoreGraphics.framework */; };
 		DBFBCD761BECF3A6005325CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFBCD751BECF3A6005325CB /* UIKit.framework */; };
 		DBFBCDBB1BECFF98005325CB /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBCD911BECFF98005325CB /* MJRefreshAutoFooter.m */; settings = {ASSET_TAGS = (); }; };
@@ -156,6 +157,8 @@
 		DBF7D1781BA9AE200011FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF7D17D1BA9AE200011FF73 /* com.slk.FreshmanGuiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7D1881BA9AE200011FF73 /* com.slk.FreshmanGuiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.slk.FreshmanGuiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF912F51C041A6800B58C46 /* MapPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPopViewController.h; sourceTree = "<group>"; };
+		DBF912F61C041A6800B58C46 /* MapPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPopViewController.m; sourceTree = "<group>"; };
 		DBFBCD731BECF39D005325CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DBFBCD751BECF3A6005325CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBFBCD7B1BECF4DC005325CB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 				DB2D2B1B1BF71FE5001DAA62 /* MainViewController.m */,
 				DB2D2B1C1BF71FE5001DAA62 /* NavViewController.h */,
 				DB2D2B1D1BF71FE5001DAA62 /* NavViewController.m */,
+				DBF912F51C041A6800B58C46 /* MapPopViewController.h */,
+				DBF912F61C041A6800B58C46 /* MapPopViewController.m */,
 				DB2D2B1E1BF71FE5001DAA62 /* NewsTableViewCell.h */,
 				DB2D2B1F1BF71FE5001DAA62 /* NewsTableViewCell.m */,
 				DB2D2B201BF71FE5001DAA62 /* NewsTableViewController.h */,
@@ -658,6 +663,7 @@
 				DBFBCDC51BECFF98005325CB /* MJRefreshBackStateFooter.m in Sources */,
 				DB2D2B321BF71FE5001DAA62 /* SwitchView.m in Sources */,
 				DB2D2B311BF71FE5001DAA62 /* NewsTableViewController.m in Sources */,
+				DBF912F71C041A6800B58C46 /* MapPopViewController.m in Sources */,
 				DBFBCDC61BECFF98005325CB /* MJRefreshGifHeader.m in Sources */,
 				DBFBCDC31BECFF98005325CB /* MJRefreshBackGifFooter.m in Sources */,
 				DBFBCDCA1BECFF98005325CB /* MJRefreshConst.m in Sources */,

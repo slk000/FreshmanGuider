@@ -9,6 +9,7 @@
 #import "NavViewController.h"
 #import "POITableViewController.h"
 #import "MainViewController.h"
+#import "MapPopViewController.h"
 @interface NavViewController (){
     BMKMapManager* _mapManager;
     BMKMapView *_mapView;
@@ -152,10 +153,13 @@
     // 设置是否可以拖拽
     annotationView.draggable = NO;
     
-    
-    UIView *v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    v.backgroundColor = [UIColor redColor];
-    
+
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapPopViewController *popVC = [sb instantiateViewControllerWithIdentifier:@"mappopview"];
+    popVC.view.height = 150;
+    popVC.view.width = 250;
+    popVC.poiTitleLabel.text = annotationView.annotation.title;
+    UIView *v = popVC.view;
     BMKActionPaopaoView *p = [[BMKActionPaopaoView alloc]initWithCustomView:v];
     [annotationView setPaopaoView:p];
     
