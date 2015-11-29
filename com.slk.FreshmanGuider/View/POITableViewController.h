@@ -11,4 +11,5 @@
 
 @interface POITableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate,UISearchResultsUpdating>
 @property (retain, nonatomic) NavViewController *parentVC;
+@property (strong, nonatomic) NSMutableDictionary *pois;
 @end

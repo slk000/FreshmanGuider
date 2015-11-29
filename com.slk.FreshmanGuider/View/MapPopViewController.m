@@ -7,9 +7,15 @@
 //
 
 #import "MapPopViewController.h"
+#import "NavViewController.h"
 
 @implementation MapPopViewController
+@synthesize poiTitleLabel;
 - (void) viewDidLoad{
     [super viewDidLoad];
 }
+- (IBAction)onClickTo:(id)sender {
+    [((NavViewController *)self.parentViewController) onClickWalkSearch:poiTitleLabel.text];
+}
+
 @end

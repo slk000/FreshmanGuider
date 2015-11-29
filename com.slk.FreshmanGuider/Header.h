@@ -16,3 +16,8 @@
 #ifndef UIVIEW_XD_H
 #include "UIView+XD.h"
 #endif
+
+#define BAIDU_MAP_KEY @"key"
+#define BAIDU_MAP_POI_KEY @"key"
+#define LEANCLOUD_ID @"id"
+#define LEANCLOUD_KEY @"key"

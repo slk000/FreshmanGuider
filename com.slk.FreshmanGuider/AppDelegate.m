@@ -28,13 +28,10 @@ static NSString *const RSS_URL = @"http://news.qq.com/newsgn/rss_newsgn.xml";
 ///////////////////////////////////////////////
 //  Init Leancloud SDK
 ///////////////////////////////////////////////
-//    [AVOSCloud setApplicationId:@"ohqhxu3mgoj2eyj6ed02yliytmbes3mwhha8ylnc215h0bgk"
-//                      clientKey:@"6j8fuggqkbc5m86b8mp4pf2no170i5m7vmax5iypmi72wldc"];
-
+    [AVOSCloud setApplicationId:LEANCLOUD_ID
+                      clientKey:LEANCLOUD_KEY];
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-//    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
-//    [testObject setObject:@"bar" forKey:@"foo"];
-//    [testObject save];
+
 ///////////////////////////////////////////////
 //  Change the color of text in the status bar
 ///////////////////////////////////////////////
